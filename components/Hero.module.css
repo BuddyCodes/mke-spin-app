@@ -1,0 +1,66 @@
+.heroContainer {
+  background-color: #0072CE; /* Milwaukee Flag Blue */
+  color: #FFFFFF;
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.heroContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #F5F5F5; /* Darkish Milwaukee-Themed Orange */
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #F0F0F0; /* Light Gray for better readability */
+}
+
+.heroBoxes {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heroBox {
+  background-color: #003B6F; /* Darker Blue for contrast */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.heroBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.boxTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #CC5500; /* Darkish Milwaukee-Themed Orange */
+}
+
+.boxText {
+  font-size: 1rem;
+  color: #E0E0E0; /* Soft light gray for readability */
+}

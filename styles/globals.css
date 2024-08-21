@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Body Styling */
+body {
+  @apply bg-background text-text font-sans;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading text-primary;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-lg;
+}
+
+h6 {
+  @apply text-base; /* Using text-base for medium text size */
+}
+
+p {
+  @apply mb-4 leading-relaxed;
+}
+
+a {
+  @apply text-secondary hover:text-accent transition-colors;
+}
+
+/* Buttons */
+button {
+  @apply font-semibold py-2 px-4 rounded-md transition-all;
+}
+
+button:hover {
+  @apply bg-secondary text-white;
+}
+
+/* Forms */
+input, textarea {
+  @apply w-full p-2 border border-gray-300 rounded-md;
+}
+
+input:focus, textarea:focus {
+  @apply border-primary ring-2 ring-primary;
+}
+
+/* Navigation Links */
+.nav-link {
+  @apply text-lg text-primary hover:text-secondary transition-colors;
+}
+
+/* Header */
+header {
+  @apply bg-white shadow-md fixed top-0 left-0 right-0 z-50;
+}
+
+header .nav-links {
+  @apply flex space-x-6;
+}
+
+/* Footer */
+footer {
+  @apply bg-darkGray text-softWhite text-center p-6 mt-10;
+}
+
+/* Modal */
+.modal-overlay {
+  @apply fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-60;
+}
+
+.modal-content {
+  @apply bg-white p-6 rounded-lg shadow-lg w-full max-w-sm;
+}
+
+.modal-content button {
+  @apply bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary transition;
+}
